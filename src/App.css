@@ -1,38 +1,87 @@
-.App {
+.closebtn-motion {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  border: 0;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+.closebtn-motion > i {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+.gallery-section {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+.gallery-control-btn {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  height: auto;
+  width: 40px;
+  cursor: pointer;
+}
+.gallery-cross-icon {
+  position: absolute;
+  right: 0px;
+  background: transparent;
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+.gallery-cross-icon:focus{
+  outline: none !important;
+}
+.gallery-section .btn:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: none !important;
+}
+.gallery-control-number {
+  position: absolute;
+  bottom: 0;
+  width: fit-content;
+  right: 0;
+}
+
+.gallery-control-current-number {
+  color: #fff;
+  font-family: ui-monospace;
+  font-size: 50px;
+}
+.gallery-total-number{
+  font-family: ui-monospace;
+  font-size: 30px;
+  color: #444;
+}
+.motion-view-image {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.motion-image {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.motion-image-container {
+  text-align: center;
+  min-height: 80vh;
+  display: table;
+  vertical-align: middle;
 }
